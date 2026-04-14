@@ -1,0 +1,25 @@
+# Arduino
+*.elf
+*.hex
+*.bin
+*.eep
+build/
+dist/
+
+# IDE
+.vscode/
+.arduino/
+Arduino IDE/
+
+# Proteus
+*.pdsbak
+*.workspace
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+
+# Gradle / Cache (nếu có)
+.gradle/
+build/
