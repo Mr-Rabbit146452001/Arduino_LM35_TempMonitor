@@ -23,4 +23,20 @@ void loop() {
     Serial.print(chuoi);
 
     delay(100);
+  Serial.begin(9600);
+  delay(100);
+}
+
+void loop() {
+  adcValues[0] = analogRead(A0);
+  nhietDo[0] = (adcValues[0] * 500.0) / 1023.0;
+  
+  adcValues[1] = analogRead(A1);
+  nhietDo[1] = (adcValues[1] * 500.0) / 1023.0;
+  
+  sprintf(chuoi, "%d,%d\n", (int)nhietDo[0], (int)nhietDo[1]);
+  Serial.print(chuoi);
+  
+  delay(100);
+
 }
