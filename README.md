@@ -35,11 +35,11 @@ Arduino_LM35_TempMonitor/
 ├── docs/
 ├── libs/
 └── README.md
-
 ## Thành viên nhóm
+
 | Họ tên | MSSV | Vai trò |
 |--------|------|---------|
-| [Le Van Hung]| [N23DCCI028] | Developer |
+| Le Van Hung | N23DCCI028 | Developer |
 
 ## Liên kết
 - GitHub: [https://github.com/yourusername/Arduino_LM35_TempMonitor](https://github.com/yourusername/Arduino_LM35_TempMonitor)
