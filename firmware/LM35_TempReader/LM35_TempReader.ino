@@ -1,11 +1,10 @@
 /*
- * Du an: Doc nhiet do LM35 va gui qua Serial (2 kenh A0, A1)
+ * Du an: Doc nhiet do LM35 va gui qua Serial (dinh dang JSON)
  * Mon: Mang Cam Bien - Tuan 03
  */
 
-int adcValues[2];
-float nhietDo[2];
-char chuoi[30];
+int adcValue;
+float nhietDo;
 
 void setup() {
     Serial.begin(9600);
@@ -13,30 +12,12 @@ void setup() {
 }
 
 void loop() {
-    adcValues[0] = analogRead(A0);
-    nhietDo[0] = (adcValues[0] * 500.0) / 1023.0;
-
-    adcValues[1] = analogRead(A1);
-    nhietDo[1] = (adcValues[1] * 500.0) / 1023.0;
-
-    sprintf(chuoi, "%d,%d\n", (int)nhietDo[0], (int)nhietDo[1]);
-    Serial.print(chuoi);
-
-    delay(100);
-  Serial.begin(9600);
-  delay(100);
-}
-
-void loop() {
-  adcValues[0] = analogRead(A0);
-  nhietDo[0] = (adcValues[0] * 500.0) / 1023.0;
-  
-  adcValues[1] = analogRead(A1);
-  nhietDo[1] = (adcValues[1] * 500.0) / 1023.0;
-  
-  sprintf(chuoi, "%d,%d\n", (int)nhietDo[0], (int)nhietDo[1]);
-  Serial.print(chuoi);
-  
-  delay(100);
-
+    adcValue = analogRead(A0);
+    nhietDo = (adcValue * 500.0) / 1023.0;
+    
+    Serial.print("{\"temperature\":");
+    Serial.print(nhietDo, 1);
+    Serial.println("}");
+    
+    delay(1000);
 }
