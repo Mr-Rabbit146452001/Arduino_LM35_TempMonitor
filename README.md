@@ -52,7 +52,7 @@ Arduino_LM35_TempMonitor/
 | Họ tên | MSSV | Vai trò |
 |--------|------|---------|
 | Le Van Hung | N23DCCI028 | Developer |
-| Pham Hoang Nguyuen Khoi| N23DCCI036| Developer |
+| Pham Hoang Nguyen Khoi| N23DCCI036| Developer |
 
 ## Liên kết
 - GitHub: [https://github.com/yourusername/Arduino_LM35_TempMonitor](https://github.com/yourusername/Arduino_LM35_TempMonitor)
