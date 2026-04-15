@@ -56,3 +56,6 @@ Arduino_LM35_TempMonitor/
 
 ## Liên kết
 - GitHub: [https://github.com/yourusername/Arduino_LM35_TempMonitor](https://github.com/yourusername/Arduino_LM35_TempMonitor)
+
+## Tac gia
+[Le Van Hung](https://Mr-Rabbit146452001.github.io/levanhung.github.io/) - Sinh vien PTIT
